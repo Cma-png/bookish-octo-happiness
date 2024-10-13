@@ -31,3 +31,13 @@ class JournalViewModel: ObservableObject {
             .store(in: &cancellables)
     }
 }
+
+// File: ios/SmartJournal/Sources/ViewModels/JournalViewModel.swift
+// Add this method to the existing JournalViewModel class
+extension JournalViewModel {
+    func getAdvice(for entry: JournalEntry) -> String? {
+        // In a real app, you would call your LLM service here
+        // This is a placeholder implementation
+        return "Based on your entry, consider taking a short walk to clear your mind."
+    }
+}

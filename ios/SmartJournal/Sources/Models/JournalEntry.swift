@@ -8,3 +8,5 @@ struct JournalEntry: Identifiable, Codable {
     let content: String
     var sentiment: String?
 }
+
+
